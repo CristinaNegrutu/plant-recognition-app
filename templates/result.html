@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-6">
+            <!--            <img src="uploads/{{name}}" class="img-fluid" alt="Imaginea incarcata">-->
+            <img src="{{ url_for('static', filename = 'uploads/' + name) }}" alt="Imaginea incarcata">
+            <hr>
+
+            {% if has_result %}
+            <h4>Aplicatia a indentificat o planta comestibila denumita <a href="{{ink}}"> {{title}} </a></h4>
+            <br>
+            <blockquote class="blockquote">
+                <p class="mb-2">{{summary}}</p>
+                <footer class="blockquote-footer">Wikipedia</footer>
+            </blockquote>
+            {% else %}
+            <h4>Aplicatia nu a identificat plante comestibile in imagine.</h4>
+            {% endif %}
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+{% endblock %}

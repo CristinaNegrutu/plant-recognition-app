@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-8">
+            <h1>Aplicatie web pentru identificarea plantelor comestibile</h1>
+            <br><br><br><br><br>
+            <h3>Incarca o imagine:</h3>
+
+            <form method="POST" action="/upload" enctype = "multipart/form-data">
+                <div class="row">
+                    <div class="col-8">
+                        <input class="form-control form-control-lg" id="formFileLg" type="file" name="file"/>
+                    </div>
+                    <div class="col-4">
+                        <input type="submit" class="btn btn-info btn-lg" value="Identifica">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+    <br><br><br>
+    <hr>
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-8">
+            <h4>Cum identificam plantele comestibile?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur vehicula elit nec dignissim.
+                Aliquam ac arcu a augue elementum feugiat molestie malesuada nunc.</p>
+            <h4>Cate categorii de plante comestibile putem identifica?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur vehicula elit nec dignissim.
+                Aliquam ac arcu a augue elementum feugiat molestie malesuada nunc.</p>
+
+            <h4>Metoda de clasificare folosita</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur vehicula elit nec dignissim.
+                Aliquam ac arcu a augue elementum feugiat molestie malesuada nunc.</p>
+
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+{% endblock %}
